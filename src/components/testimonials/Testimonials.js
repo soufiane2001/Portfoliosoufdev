@@ -134,12 +134,12 @@ const aboutRef = useRef(null);
 
 
 
-    <div className=" mt-9 md:mt-16 flex justify-around flex-wrap px-10  md:px-52"> 
+    <div className=" mt-9 md:mt-16 flex justify-around flex-wrap px-4  md:px-20"> 
    
            
               
             {users.length>0 && users.map((x)=>{
-              return( <div className="w-3/4 rounded-3xl md:w-1/4 ml-5 p-5 rounded flex-grow-0 flex-shrink-0 flex flex-col justify-around  overflow-hidden shadow-lg  mt-5">
+              return( <div className="w-3/4 rounded-3xl md:w-2/4 ml-5 p-5 rounded flex-grow-0 flex-shrink-0 flex flex-col justify-around  overflow-hidden shadow-lg  mt-5">
                  <div className="px-6 py-4 ">
                    <div className="font-bold md:text-xl text-md mb-2">{x.prenom}</div>
                         <p className="text-gray-700 text-lg">

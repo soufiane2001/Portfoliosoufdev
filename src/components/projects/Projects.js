@@ -75,7 +75,7 @@ const aboutRef = useRef(null);
     }, []);
 
   return (
-    <div id='projets' ref={aboutRef} className='mt-5  md:mt-20 border-b-2  border-gray-200 p-4 pb-11 md:px-20 md:pb-64'>
+    <div id='projets' ref={aboutRef} className='mt-5  md:mt-20 border-b-2  border-gray-200 p-1 pb-11 md:px-20 md:pb-64'>
           <style>
       {`
         @keyframes fadeIn {
@@ -113,9 +113,9 @@ const aboutRef = useRef(null);
              <h2 onClick={()=>{setcat("mobile")}} className=' border-2 px-6 rounded-xl mr-4 cursor-pointer hover:bg-indigo-500  hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Mobile</h2>
         </div>
         
-         <div className=" mt-9 md:mt-16 flex justify-around items-stretch flex-wrap px-10  md:px-52"> 
+         <div className="w-100 mt-9 md:mt-16 flex justify-around items-stretch flex-wrap px-1  md:px-36"> 
         {categorie=="All" && projects.map((x)=>{return(
-            <div className="w-4/5 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around p-5   rounded overflow-hidden shadow-lg  mt-8">
+            <div className="w-4/5 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around md:p-5   rounded overflow-hidden shadow-lg  mt-8">
               
                <img
         src={x.img} 
@@ -126,7 +126,7 @@ const aboutRef = useRef(null);
       />
                  <div className="px-6 py-4">
                    <div className="font-bold md:text-xl text-md mb-2">{x.title}</div>
-                        <p className="text-gray-700 text-base  md:text-lg text-sm ">
+                        <p className="text-gray-700 text-base text-sm  md:text-lg  break-words">
                                {x.description}
                         </p>
                     </div>
@@ -156,7 +156,7 @@ const aboutRef = useRef(null);
 
          
 {categorie=="web" && projects.map((x)=>{if(x.type=="web")return(
-            <div className="w-4/5 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around p-5   rounded overflow-hidden shadow-lg  mt-8">
+            <div className="w-100 md:w-2/5 flex-grow-0 flex-shrink-0 flex flex-col justify-around p-5   rounded overflow-hidden shadow-lg  mt-8">
               
                <img
         src={x.img} 
