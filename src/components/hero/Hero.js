@@ -7,7 +7,7 @@ function Hero() {
   
 
   return (
-<div className='mt-2 md:mt-4 border-b-2 border-gray-200 py-8 md:px-36 md:py-36 lg:px-52 lg:py-28 flex flex-col-reverse md:flex-row justify-around items-center'>
+<div className='mt-2 md:mt-4 border-b-2 border-gray-200 py-8 md:px-64 md:py-64 lg:px-64 lg:py-36 flex flex-col-reverse md:flex-row justify-around items-center'>
       <style>
         {`
           @keyframes fadeIn {
